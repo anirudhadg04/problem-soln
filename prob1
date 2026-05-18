@@ -1,0 +1,24 @@
+""" List of student roll number
+find if the given roll number is present.
+print its index"""
+
+a = int(input("Enter the number of students: "))
+x = [] 
+#Entering the roll numbers
+for i in range(a):
+    roll_no = input("Enter the roll numbers: ")
+    x.append(roll_no)
+    
+#Getting the data back 
+y = input("Enter the roll number you want to check: ")
+if y in x:
+    # Find the specific index
+    index = x.index(y)
+    print(f"Roll number {y} exists! It is at index {index}.")
+else:
+    print("Roll number not found.")
+
+
+
+
+    
