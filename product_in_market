@@ -1,0 +1,9 @@
+#products in list  - if milk exists - rice,sugar,milk,oil,soap
+products = ['Rice','Sugar','Milk','Oil','Soap']
+new_products = []
+for i in products:
+    new_products.append(i.lower())
+target = input("Enter the product you want: ")
+new_target = target.lower() 
+if new_target in new_products: 
+    print("product found")
